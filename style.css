@@ -1,0 +1,109 @@
+/*
+seletor{
+    propriedade:valor;
+}
+*/
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: #2D033B;
+}
+
+div{
+    background-color: #F2DFE2;
+    width: 340px; /*largura (400-60 do padding)*/    
+    /*height: 561px; /*altura*/
+
+    margin-top: 80px;    
+    /*centraliza a div*/
+    margin-left: auto;
+    margin-right: auto;
+
+    /*espaçamento interno*/
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+img{
+    width: 100px;
+    border: #2D033B 5px solid;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+h1{
+    color: #2D033B;    
+    font-size: 32px;   
+    margin: 0;         
+    
+}
+
+h2{
+    color: #810CA8;
+    font-size: 20px;    
+    margin: 0;
+}
+
+p{
+    /*font-size: 16px; 16px é o valor inicial*/
+    color: #666666;    
+}
+
+ul{
+    padding: 0;
+    list-style-type: none; /*retirando o marcador da lista*/    
+}
+
+/*formatando todos os links que estiverem dentro de uma lista <ul>*/
+ul a{
+    background-color: #2D033B;
+    color: #ffffff;
+    display: block;
+    margin-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+    border-radius: 3px;
+    
+    text-decoration: none; /*retira o sublinhado dos links*/
+}
+
+/*ao passar o mouse nos links que estão na <ul>*/
+ul a:hover{
+    background-color: #E5B8F4;
+    color: #2D033B;
+}
+
+#assinatura{
+    color: #2D033B;
+}
+
+#assinatura:hover{
+    font-style: italic;
+}
+
+
+/*
+    MEDIA QUERIES
+    São condicionais normalmente referentes a largura de um dispositivo
+*/
+
+@media (max-width: 500px){
+
+    div{
+        width: 300px;
+        padding: 15px;
+    }
+
+    h1{
+        font-size: 28px;
+    }
+
+    img{
+        width: 80px;
+        margin-bottom: 15px;
+    }
+
+}
